@@ -45,7 +45,7 @@ def stickers_matched(cube):
   matches = flattened == flattened_solved
   count =  int(np.sum(matches))
   return count == 81, count
-
+"""
 prob_vec = np.ones([12])
 prob_vec = prob_vec / np.sum(prob_vec)
 prob_vec = prob_vec.T
@@ -61,6 +61,7 @@ def weighted_convolutional_dist(cube, k=6):
     wcv = conv_weight * weighted_convolutional_dist(cube, k-1) @ s + (1- conv_weight) @ prob_vec @ d_adj
     correct = wcv == 0
     return correct, wcv
+"""
 
 def state_key(cube):
   return tuple(cube.flatten().tolist())
