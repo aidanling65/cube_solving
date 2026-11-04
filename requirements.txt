@@ -3,5 +3,5 @@ matplotlib
 networkx
 ipywidgets
 ipythonblocks
-"gym"
+gym
 pygame
