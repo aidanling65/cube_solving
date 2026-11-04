@@ -68,3 +68,6 @@ def state_key(cube):
 
 def state_key_oneshot(state):
   return np.reshape(np.array(state), (3,3,3,3,7))
+  
+def state_key_numeric(state):
+  return oneshot_numeric(state_key_oneshot(state))
