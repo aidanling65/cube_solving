@@ -65,3 +65,6 @@ def weighted_convolutional_dist(cube, k=6):
 
 def state_key(cube):
   return tuple(cube.flatten().tolist())
+
+def state_key_oneshot(state):
+  return np.reshape(np.array(state), (3,3,3,3,7))
