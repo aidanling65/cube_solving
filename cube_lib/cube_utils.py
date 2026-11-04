@@ -102,8 +102,9 @@ def parse_algorithm(text, cube):
 
 
 
-def shuffle_cube(cube, n_moves=15):
+def shuffle_cube(cube, n_moves=15, seed=0):
   move_list = ""
+  random.seed(seed)
   for i in range(n_moves):
     move = random.choice(list(core_moves.keys()))
     move_list = move_list + move
