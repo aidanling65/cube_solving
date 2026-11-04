@@ -1,0 +1,6 @@
+[project]
+name = "cubing"
+version = "0.1"
+
+[tool.setuptools]
+packages = ["cube_lib", "heuristic_algs"]
