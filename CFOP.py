@@ -88,4 +88,4 @@ if __name__ == "__main__":
   cube = parse_algorithm(daisy(cube), cube)
   cube = parse_algorithm(cross(cube), cube)
   print_cube(cube)
-F2L(cube)
+  F2L(cube)
