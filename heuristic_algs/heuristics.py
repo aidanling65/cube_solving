@@ -71,3 +71,6 @@ def state_key_oneshot(state):
   
 def state_key_numeric(state):
   return oneshot_numeric(state_key_oneshot(state))
+
+def numeric_state_key(cube):
+  return state_key(cube_to_oneshot(cube))
