@@ -2,7 +2,7 @@ from enum import Enum
 from cube_lib.cube_strings import pad
 import numpy as np
 from cube_lib.cube_utils import create_cube, print_cube, shuffle_cube, parse_algorithm
-from .beginner_method import yellow_top, daisy, cross
+from beginner_method import yellow_top, daisy, cross
 
 class Colour(Enum):
   WHITE = "1"
