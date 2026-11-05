@@ -700,15 +700,15 @@ def solve_cube(org_cube):
   print(sequence)
   return sequence
 
-
-cube = create_cube()
-cube = shuffle_cube(cube)
-print_cube(cube)
-start = time.time()
-solution = solve_cube(cube)
-end = time.time()
-length = end - start
-cube = parse_algorithm(solution,cube)
-print_cube(cube)
-print(alg_length(solution))
-print(length, " seconds!")
+if __name__ == "__main__":
+  cube = create_cube()
+  cube = shuffle_cube(cube)
+  print_cube(cube)
+  start = time.time()
+  solution = solve_cube(cube)
+  end = time.time()
+  length = end - start
+  cube = parse_algorithm(solution,cube)
+  print_cube(cube)
+  print(alg_length(solution))
+  print(length, " seconds!")
