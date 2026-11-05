@@ -78,13 +78,14 @@ def F2L(cube):
     print_cube(temp_cube)
     temp_cube = cube.copy()
 
-cube = create_cube()
-print_cube(cube)
-F2L(cube)
+if __name__ == "__main__":
+  cube = create_cube()
+  print_cube(cube)
+  F2L(cube)
 
-cube = shuffle_cube(cube)
-cube = parse_algorithm(yellow_top(cube), cube)
-cube = parse_algorithm(daisy(cube), cube)
-cube = parse_algorithm(cross(cube), cube)
-print_cube(cube)
+  cube = shuffle_cube(cube)
+  cube = parse_algorithm(yellow_top(cube), cube)
+  cube = parse_algorithm(daisy(cube), cube)
+  cube = parse_algorithm(cross(cube), cube)
+  print_cube(cube)
 F2L(cube)
