@@ -8,7 +8,7 @@ ORDER = list(COLOURS)                       # W, Y, B, O, R, G, K
 FACES = ['U', 'L', 'F', 'R', 'B', 'D']
 CENTRE = {'U': 'Y', 'L': 'G', 'F': 'O', 'R': 'R', 'B': 'B', 'D': 'W'}
 COLOUR_CODE = {'W': 1, 'Y': 2, 'R': 3, 'O': 4, 'B': 5, 'G': 6, 'K': 0}
-
+result = {'cube':None, 'cubie_mask':None}
 
 def sticker_pos(axis, a, b, c):
     if axis == 0:
@@ -21,7 +21,7 @@ def sticker_pos(axis, a, b, c):
 def start_widget():
     active = {'colour': 'W'}
     buttons, palette_buttons = {}, {}
-    result = {'cube': None, 'cubie_mask': None}
+    global result
 
     status = widgets.HTML("Active colour: <b>W</b>")
     out = widgets.Output()
