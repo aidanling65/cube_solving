@@ -7,7 +7,7 @@ COLOURS = {'W': '#ffffff', 'Y': '#ffd500', 'B': '#0046ad',
 ORDER = list(COLOURS)                       # W, Y, B, O, R, G, K
 FACES = ['U', 'L', 'F', 'R', 'B', 'D']
 CENTRE = {'U': 'Y', 'L': 'G', 'F': 'O', 'R': 'R', 'B': 'B', 'D': 'W'}
-COLOUR_CODE = {'W': 1, 'Y': 2, 'B': 3, 'O': 4, 'R': 5, 'G': 6, 'K': 0}
+COLOUR_CODE = {'W': 1, 'Y': 2, 'R': 3, 'O': 4, 'B': 5, 'G': 6, 'K': 0}
 
 
 def sticker_pos(axis, a, b, c):
