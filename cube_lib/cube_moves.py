@@ -237,32 +237,32 @@ def r_prime(cube):
   return temp_cube
 
 def l(cube):
-  temp = l(cube)
+  temp = L(cube)
   temp = M(temp)
   return temp
 
 def l_prime(cube):
-  temp_cube = l_prime(cube)
+  temp_cube = L_prime(cube)
   temp_cube =  M_prime(temp_cube)
   return temp_cube
 
 def f(cube):
-  temp = f(cube)
+  temp = F(cube)
   temp = S(temp)
   return temp
 
 def f_prime(cube):
-  temp_cube = f_prime(cube)
+  temp_cube = F_prime(cube)
   temp_cube = S_prime(temp_cube)
   return temp_cube
 
 def b(cube):
-  temp = b(cube)
+  temp = B(cube)
   temp = S_prime(temp)
   return temp
 
 def b_prime(cube):
-  temp_cube = b_prime(cube)
+  temp_cube = B_prime(cube)
   temp_cube = S(temp_cube)
   return temp_cube
 
@@ -277,12 +277,12 @@ def u_prime(cube):
   return temp_cube
 
 def d(cube):
-  temp = d(cube)
+  temp = D(cube)
   temp = E_prime(temp)
   return temp
 
 def d_prime(cube):
-  temp_cube = d_prime(cube)
+  temp_cube = D_prime(cube)
   temp_cube = E(temp_cube)
   return temp_cube
 
