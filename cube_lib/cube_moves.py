@@ -226,6 +226,66 @@ def D(cube):
   joined = np.concatenate([middle_slab, bottom_slab], axis=0)
   return np.concatenate([top_slab, joined], axis=0)
 
+def r(cube):
+  temp = R(cube)
+  temp = M_prime(temp)
+  return temp
+
+def r_prime(cube):
+  temp_cube = R_prime(cube)
+  temp_cube =  M(temp_cube)
+  return temp_cube
+
+def l(cube):
+  temp = l(cube)
+  temp = M(temp)
+  return temp
+
+def l_prime(cube):
+  temp_cube = l_prime(cube)
+  temp_cube =  M_prime(temp_cube)
+  return temp_cube
+
+def f(cube):
+  temp = f(cube)
+  temp = S(temp)
+  return temp
+
+def f_prime(cube):
+  temp_cube = f_prime(cube)
+  temp_cube = S_prime(temp_cube)
+  return temp_cube
+
+def b(cube):
+  temp = b(cube)
+  temp = S_prime(temp)
+  return temp
+
+def b_prime(cube):
+  temp_cube = b_prime(cube)
+  temp_cube = S(temp_cube)
+  return temp_cube
+
+def u(cube):
+  temp = U(cube)
+  temp = E_prime(temp)
+  return temp
+
+def u_prime(cube):
+  temp_cube = U_prime(cube)
+  temp_cube = E(temp_cube)
+  return temp_cube
+
+def d(cube):
+  temp = d(cube)
+  temp = E_prime(temp)
+  return temp
+
+def d_prime(cube):
+  temp_cube = d_prime(cube)
+  temp_cube = E(temp_cube)
+  return temp_cube
+
 core_moves = {
     "U": U,
     "U'": U_prime,
@@ -259,4 +319,19 @@ orients = {
     "Z'":Z_prime
 }
 
-moves = core_moves | slices | orients
+blocks = {
+    "r":r,
+    "r'":r_prime,
+    "l":l,
+    "l'":l_prime,
+    "u":u,
+    "u'":u_prime,
+    "d":d,
+    "d'":d_prime,
+    "f":f,
+    "f'":f_prime
+    "b":b,
+    "b'":b_prime,
+}
+
+moves = core_moves | slices | orients | blocks
