@@ -54,4 +54,6 @@ def invert_move(move):
   
 def alg_length(text):
   seq = text.replace("'", "").replace("2","")
+  replacements = str.maketrans({"Y":"","X":"","Z":""})
+  seq = seq.translate(replacements)
   return len(seq)
