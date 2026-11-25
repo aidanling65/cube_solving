@@ -44,5 +44,6 @@ if __name__ == "__main__":
   length = end - start
   cube = parse_algorithm(solution,cube)
   print_cube(cube)
+  print(solution)
   print(alg_length(solution))
   print(length, " seconds!")
